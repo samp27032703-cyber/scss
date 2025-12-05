@@ -1,0 +1,17 @@
+@import 'variables';
+
+.btn {
+  font-family: $font-family;
+  font-size: $base-font-size;
+  padding: ($spacing / 2) $spacing;
+  border: none;
+  border-radius: ($border-radius / 2);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.12s ease;
+  color: #fff;
+  background-color: $secondary-color;
+  &:hover { transform: translateY(-1px); }
+}
+
+.btn--primary { @extend .btn; background-color: $primary-color; }
+.btn--secondary { @extend .btn; background-color: $secondary-color; }

@@ -1,0 +1,11 @@
+@mixin box-shadow($x: 0px, $y: 2px, $blur: 4px, $color: rgba(0,0,0,0.1)) {
+  -webkit-box-shadow: $x $y $blur $color;
+  -moz-box-shadow: $x $y $blur $color;
+  box-shadow: $x $y $blur $color;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

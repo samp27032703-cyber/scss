@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'mixins';
+@import 'buttons';
+
+.header {
+  background: $primary-color;
+  color: #fff;
+  padding: $spacing;
+  @include flex-center;
+}
